@@ -264,7 +264,7 @@ void detectQuartoInstallation()
          LOG_ERROR(error);
       }
    }
-   else
+   else if (!embeddedVersion.empty())
    {
       showQuartoVersionWarning(embeddedVersion, kQuartoRequiredVersion);
    }
